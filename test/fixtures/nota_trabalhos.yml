@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  curso: one
+  disciplina: 
+  nota: 
+
+two:
+  curso: two
+  disciplina: 
+  nota: 

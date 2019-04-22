@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  disciplina: one
+  data_entrega: 
+  descricao: 
+
+two:
+  disciplina: two
+  data_entrega: 
+  descricao: 

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pal.nome %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @pal.cpf %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @pal.rg %>
+</p>
+
+<%= link_to 'Edit', edit_pal_path(@pal) %> |
+<%= link_to 'Back', pais_path %>

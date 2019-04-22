@@ -1,0 +1,32 @@
+<%= form_with(model: nota_trabalho, local: true) do |form| %>
+  <% if nota_trabalho.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(nota_trabalho.errors.count, "error") %> prohibited this nota_trabalho from being saved:</h2>
+
+      <ul>
+      <% nota_trabalho.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :curso_id %>
+    <%= form.text_field :curso_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disciplina %>
+    <%= form.text_field :disciplina %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nota %>
+    <%= form.text_field :nota %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

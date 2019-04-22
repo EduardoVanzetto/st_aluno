@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pais: 
+  cidade: 
+  endereco: 
+  numero: 
+  cep: 
+
+two:
+  pais: 
+  cidade: 
+  endereco: 
+  numero: 
+  cep: 

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Atividade Extras</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Curso</th>
+      <th>Disciplina</th>
+      <th>Nota</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @atividade_extras.each do |atividade_extra| %>
+      <tr>
+        <td><%= atividade_extra.curso %></td>
+        <td><%= atividade_extra.disciplina %></td>
+        <td><%= atividade_extra.nota %></td>
+        <td><%= link_to 'Show', atividade_extra %></td>
+        <td><%= link_to 'Edit', edit_atividade_extra_path(atividade_extra) %></td>
+        <td><%= link_to 'Destroy', atividade_extra, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Atividade Extra', new_atividade_extra_path %>

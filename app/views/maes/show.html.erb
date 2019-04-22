@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @mao.nome %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @mao.cpf %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @mao.rg %>
+</p>
+
+<%= link_to 'Edit', edit_mao_path(@mao) %> |
+<%= link_to 'Back', maes_path %>

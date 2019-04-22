@@ -1,0 +1,32 @@
+<%= form_with(model: mao, local: true) do |form| %>
+  <% if mao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mao.errors.count, "error") %> prohibited this mao from being saved:</h2>
+
+      <ul>
+      <% mao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpf %>
+    <%= form.text_field :cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rg %>
+    <%= form.text_field :rg %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

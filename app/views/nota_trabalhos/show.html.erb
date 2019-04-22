@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @nota_trabalho.curso %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @nota_trabalho.disciplina %>
+</p>
+
+<p>
+  <strong>Nota:</strong>
+  <%= @nota_trabalho.nota %>
+</p>
+
+<%= link_to 'Edit', edit_nota_trabalho_path(@nota_trabalho) %> |
+<%= link_to 'Back', nota_trabalhos_path %>

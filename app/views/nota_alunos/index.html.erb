@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nota Alunos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nota</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nota_alunos.each do |nota_aluno| %>
+      <tr>
+        <td><%= nota_aluno.nota %></td>
+        <td><%= link_to 'Show', nota_aluno %></td>
+        <td><%= link_to 'Edit', edit_nota_aluno_path(nota_aluno) %></td>
+        <td><%= link_to 'Destroy', nota_aluno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nota Aluno', new_nota_aluno_path %>

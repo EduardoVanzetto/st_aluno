@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario: one
+  mae: one
+  pai: one
+  endereco: one
+  nascimento: 
+
+two:
+  usuario: two
+  mae: two
+  pai: two
+  endereco: two
+  nascimento: 

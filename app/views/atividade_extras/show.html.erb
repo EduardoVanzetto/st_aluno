@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @atividade_extra.curso %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @atividade_extra.disciplina %>
+</p>
+
+<p>
+  <strong>Nota:</strong>
+  <%= @atividade_extra.nota %>
+</p>
+
+<%= link_to 'Edit', edit_atividade_extra_path(@atividade_extra) %> |
+<%= link_to 'Back', atividade_extras_path %>

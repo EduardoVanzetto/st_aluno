@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Alunoos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Mae</th>
+      <th>Pai</th>
+      <th>Endereco</th>
+      <th>Nascimento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alunoos.each do |alunoo| %>
+      <tr>
+        <td><%= alunoo.usuario %></td>
+        <td><%= alunoo.mae %></td>
+        <td><%= alunoo.pai %></td>
+        <td><%= alunoo.endereco %></td>
+        <td><%= alunoo.nascimento %></td>
+        <td><%= link_to 'Show', alunoo %></td>
+        <td><%= link_to 'Edit', edit_alunoo_path(alunoo) %></td>
+        <td><%= link_to 'Destroy', alunoo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Alunoo', new_alunoo_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Maes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cpf</th>
+      <th>Rg</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @maes.each do |mao| %>
+      <tr>
+        <td><%= mao.nome %></td>
+        <td><%= mao.cpf %></td>
+        <td><%= mao.rg %></td>
+        <td><%= link_to 'Show', mao %></td>
+        <td><%= link_to 'Edit', edit_mao_path(mao) %></td>
+        <td><%= link_to 'Destroy', mao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mao', new_mao_path %>
