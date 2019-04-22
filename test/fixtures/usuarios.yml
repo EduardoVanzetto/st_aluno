@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: 
+  rg: 
+  cpf: 
+  telefone: 
+  email: 
+
+two:
+  nome: 
+  rg: 
+  cpf: 
+  telefone: 
+  email: 
